@@ -1,0 +1,20 @@
+{
+    "format_version": 2,
+    "min_clients": 2,
+    "num_rounds": 3,
+    "server": {
+        "heart_beat_timeout": 600
+    },
+    "task_data_filters": [],
+    "task_result_filters": [],
+    "components": [
+        {
+            "id": "data_privacy",
+            "path": "nvflare.app_common.filters.privacy.PrivacyFilter",
+            "args": {
+                "epsilon": 1.0,
+                "delta": 1e-5
+            }
+        }
+    ]
+}
